@@ -1,57 +1,55 @@
-# Дипломный проект профессии «Fullstack-разработчик на Python»
+# Проект облачное хранилище
 
-## ☁️ Облачное хранилище «MyCloud»
+## «MyCloud»
 
-http://194.67.88.6/
 
 ## Развёртывание проекта локально
 Для развертывания проекта локально выполните следующие действия:
 - Клонируйте репозиторий: 
 ``` 
-$ git clone https://github.com/andrejtop/MyCloud.git
+$ git clone https://github.com/german-spb/storage.git
 ```
 - Активируйте виртуальное окружение и устанавите зависимости: 
 ```
 $ cd MyCloud/
-$ python3 -m venv env
-$ source env/bin/activate
+$ python -m venv env 
+$ source env/bin/activate (ubuntu)
 (env) $ pip install -r requirements.txt
 ```
 - Установите PostgreSQL. Создайте базу данных PostgreSQL.
 
-- В корне проекта создаем файл `.env` в котором определите необходимые переменные окружения: 
+- В корне проекта создать файл `.env` в котором установить переменные окружения: 
 ```
 SECRET_KEY=секретный ключ django
 DEBUG=режим отладки True или False
 ALLOWED_HOSTS=допустимые хосты (например, для запуска локально укажите 127.0.0.1)
-// Данные для подключения к базе данных (к той, что создали в пункте 4):
 DB_NAME=имя базы данных (например: my_database)
 DB_USER=имя пользователя базы данных (например: admin)
 DB_PASSWORD=пароль для доступа к базе данных
 DB_HOST=хост базы данных (например: localhost)
 DB_PORT=порт базы данных (например: 5432)
 ```
-- Выполните миграции
+- Выполнить миграции
 ```
 (env) $ python manage.py makemigrations
 (env) $ python manage.py migrate
 ```
-- В директории `frontend/` установите NPM зависимости.
+- Перейти в директорию `frontend/` и установить NPM зависимости.
 ```
 (env) $ npm install
 ```
-- В файле `frontend/src/api/requests.js` в переменной `BASE_URL` установим url, на который будут отправлятся запросы на сервер. Например: `http://127.0.0.1:8000/api/`
-После этого пересоберите бандл фронтенда
+- В файле `frontend/src/api/requests.js` в переменной `BASE_URL` установить url, на который будут отправлятся запросы на сервер. Например: `http://127.0.0.1:8000/api/`
+Собрать бандл фронтенда
 ```
 (env) $ npm run dev
 
 ```
-- Соберите sтаtic-файлы
+- Собрать sтаtic-файлы
 ```
 python manage.py collectstatic
 ```
 
-- Запускаем приложение.
+- Запустить приложение.
 ```
 (env) $ python manage.py runserver
 ```
