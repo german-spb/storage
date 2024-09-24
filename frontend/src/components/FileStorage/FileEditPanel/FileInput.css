@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85px;
+  width: 80px;
   height: 40px;
   border-radius: 10px;
   background-color: #34aadc;
@@ -30,7 +30,7 @@
 
 input[type="submit"] {
   height: 40px;
-  width: 68px;
+  width: 75px;
   cursor: pointer;
   background-color: red;
   box-shadow: -2px 5px 23px -5px #e0e1dd;
