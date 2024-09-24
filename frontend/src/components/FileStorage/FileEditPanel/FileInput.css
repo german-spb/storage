@@ -32,7 +32,7 @@ input[type="submit"] {
   height: 40px;
   width: 50px;
   cursor: pointer;
-  background-color: #415a77;
+  background-color: red;
   box-shadow: -2px 5px 23px -5px #e0e1dd;
   border-radius: 10px;
   border: none;
