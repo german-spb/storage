@@ -23,11 +23,11 @@ function StartPage() {
       ? (
         <section className="start-page">
           <div className="start-page--welcome">
-            <h1 className="start-page--welcome--title">Загружайте, скачивайте и управляйте своими файлами.</h1>
-            <h2 className="start-page--welcome--subtitle">Попробуйте новое хранилище файлов.</h2>
+            <h1 className="start-page--welcome--title">Загружайте, храните и управляйте своими файлами.</h1>
+            <h2 className="start-page--welcome--subtitle">Доступ к вашим файлам из любой точки мира</h2>
             <div className="start-page--welcome--content">
-            MyCloud - это новое простое хранилище файлов.
-            Здесь вы можете хранить и управлять своими файлами. Попробуйте прямо сейчас!
+            MySTORAGE - это удобное облачное решение.
+            Простота использования, максимальная гибкость.
             </div>
             <button className="sing-up-button" onClick={onClickHandler} type="button">Начать</button>
           </div>
