@@ -19,10 +19,16 @@ function FileInput({ sendFile }) {
     file.current.value = '';
   };
 
+  const logout = () => {
+       localStorage.clear();
+       window.location.href = '/';
+  };  
+
   return (
     !currentStorageUser
       ? (
         <form className="file-input-form" onSubmit={onSubmitHandler}>
+          <div className="file-logout button" onClick={() => logout()} onKeyDown={() => logout()} role="button">logOut</div>
           <div className="input-wrapper button">
             <label htmlFor="input_file">
               Добавить файл
