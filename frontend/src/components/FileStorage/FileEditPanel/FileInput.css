@@ -3,7 +3,7 @@
   position: fixed;
   right: 10%;
   bottom: 10%;
-  width: 160px;
+  width: 250px;
   justify-content: space-between;
 }
 
@@ -55,4 +55,16 @@ label {
 .preview {
   position: absolute;
   margin-top: -120%;
+}
+
+file-logout {
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
